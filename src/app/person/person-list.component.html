@@ -1,0 +1,25 @@
+
+<!--<ul>
+  <li *ngFor="let person of persons">
+    <span class="badge">{{person.id}}</span>
+    <span>{{person.name}}</span>
+  </li>
+</ul>-->
+<div class="container">
+  <h1>{{title}}</h1>
+  <div class="card-deck">
+    <div *ngFor="let person of persons" class="card" style="width: 20rem;">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">{{person.id}}</h4>
+        <p class="card-text">{{person.name}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
